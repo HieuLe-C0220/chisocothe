@@ -8,13 +8,21 @@
     <script>
         let w = parseInt(prompt('Nhập cân nặng (kg): ',''));
         let h = Number(prompt('Nhập chiều cao (m): ',''));
-        let bmi = w / (h*h);
-        let ketQua = (bmi < 18.5) ?
-            "Underweight" : (bmi < 25.0) ?
-                "Normal" : (bmi < 30.0) ?
-                    "Overweight" : (bmi >= 30.0) ?
-                        "Obese" : "";
-        document.write(ketQua);
+        let bmi = w / Math.pow(h,2);
+    // let ketQua = (bmi < 18.5) ?
+        // "Underweight" : (bmi < 25.0) ?
+            // "Normal" : (bmi < 30.0) ?
+                // "Overweight" : (bmi >= 30.0) ?
+                   // "Obese" : "";
+    // document.write(ketQua);
+        if (bmi < 18.5) {
+            document.write('Underweight');
+        } else if (bmi < 25.0) {
+            document.write('Normal');
+        } else if (bmi < 30.0) {
+            document.write('Overweight');
+        } else
+            document.write('Obese');
     </script>
 </body>
 </html>
