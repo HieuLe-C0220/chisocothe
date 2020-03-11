@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng</title>
+</head>
+<body>
+    <script>
+        let w = parseInt(prompt('Nhập cân nặng (kg): ',''));
+        let h = Number(prompt('Nhập chiều cao (m): ',''));
+        let bmi = w / (h*h);
+        let ketQua = (bmi < 18.5) ?
+            "Underweight" : (bmi < 25.0) ?
+                "Normal" : (bmi < 30.0) ?
+                    "Overweight" : (bmi >= 30.0) ?
+                        "Obese" : "";
+        document.write(ketQua);
+    </script>
+</body>
+</html>
