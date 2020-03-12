@@ -6,9 +6,12 @@
 </head>
 <body>
     <script>
-        let w = parseInt(prompt('Nhập cân nặng (kg): ',''));
-        let h = Number(prompt('Nhập chiều cao (m): ',''));
+        let w = parseFloat(prompt('Nhập cân nặng (kg): ',''));
+        console.log(w)
+        let h = parseFloat(prompt('Nhập chiều cao (m): ',''));
+        console.log(h)
         let bmi = w / Math.pow(h,2);
+        console.log(bmi)
     // let ketQua = (bmi < 18.5) ?
         // "Underweight" : (bmi < 25.0) ?
             // "Normal" : (bmi < 30.0) ?
